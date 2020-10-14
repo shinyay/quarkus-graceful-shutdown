@@ -13,10 +13,12 @@ function do_func
   or set -l _flag_artifact "getting-started"
 
   mvn io.quarkus:quarkus-maven-plugin:1.8.3.Final:create \
+#  mvn io.quarkus:quarkus-maven-plugin:1.9.0.CR1:create \
     -DprojectGroupId=com.google.shinyay \
     -DprojectArtifactId=$_flag_artifact \
     -DclassName="com.google.shinyay.QuarkusApplication" \
     -Dpath="/" \
+#    -DbuildTool=GRADLE_KOTLIN_DSL \
     -DbuildTool=GRADLE \
     -Dextensions="kotlin,resteasy-jsonb"
 end
