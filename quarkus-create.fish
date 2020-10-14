@@ -17,6 +17,7 @@ function do_func
     -DprojectArtifactId=$_flag_artifact \
     -DclassName="com.google.shinyay.QuarkusApplication" \
     -Dpath="/" \
+    -DbuildTool=GRADLE \
     -Dextensions="kotlin,resteasy-jsonb"
 end
 
