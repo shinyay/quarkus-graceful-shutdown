@@ -18,7 +18,6 @@ function do_func
     -DclassName="com.google.shinyay.QuarkusApplication" \
     -Dpath="/" \
     -Dextensions="kotlin,resteasy-jsonb"
-  cd $_flag_artifact
 end
 
 do_func $argv
