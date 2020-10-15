@@ -4,8 +4,14 @@ Quarkus includes support for graceful shutdown, this allows Quarkus to wait for 
 
 ## Description
 #### Graceful Shutdown property
-- `quarkus.shutdown.timeout`
+- `quarkus.shutdown.timeout = <TIME(s)>`
   - This property is **disabled by default** 
+
+```
+# resources/application.properties
+
+quarkus.shutdown.timeout = 10
+```
 
 ## Demo
 
