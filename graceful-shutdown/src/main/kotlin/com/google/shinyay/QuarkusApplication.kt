@@ -12,7 +12,7 @@ class QuarkusApplication {
     @Produces(MediaType.TEXT_PLAIN)
     fun hello(): String {
         println("[" + Thread.currentThread().name + "[Start]")
-        Thread.sleep(20000L)
+        Thread.sleep(30000L)
         println("[" + Thread.currentThread().name + "[End]")
         return "hello"
     }
